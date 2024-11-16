@@ -1,43 +1,40 @@
 <odoo>
+    <!-- Vista tipo árbol para Métricas de Suscripción -->
     <record id="view_metrica_suscripcion_tree" model="ir.ui.view">
         <field name="name">metrica.suscripcion.tree</field>
         <field name="model">metrica.suscripcion</field>
         <field name="arch" type="xml">
             <tree>
-                <field name="contrato_id"/>
-                <field name="ingresos_recurrentes"/>
-                <field name="horas_usadas"/>
-                <field name="tasa_retencion"/>
-                <field name="costo_soporte"/>
-                <field name="clientes_riesgo"/>
+                <field name="nombre"/>
+                <field name="descripcion"/>
+                <field name="fecha"/>
+                <field name="valor"/>
             </tree>
         </field>
     </record>
 
+    <!-- Vista tipo formulario para Métricas de Suscripción -->
     <record id="view_metrica_suscripcion_form" model="ir.ui.view">
         <field name="name">metrica.suscripcion.form</field>
         <field name="model">metrica.suscripcion</field>
         <field name="arch" type="xml">
-            <form string="Métricas de Suscripción">
+            <form string="Métrica de Suscripción">
                 <sheet>
                     <group>
-                        <field name="contrato_id"/>
-                        <field name="ingresos_recurrentes"/>
-                        <field name="horas_usadas"/>
-                        <field name="tasa_retencion"/>
-                        <field name="costo_soporte"/>
-                        <field name="clientes_riesgo"/>
+                        <field name="nombre"/>
+                        <field name="descripcion"/>
+                        <field name="fecha"/>
+                        <field name="valor"/>
                     </group>
                 </sheet>
             </form>
         </field>
     </record>
 
+    <!-- Acción para Métricas de Suscripción -->
     <record id="action_metrica_suscripcion" model="ir.actions.act_window">
         <field name="name">Métricas de Suscripción</field>
         <field name="res_model">metrica.suscripcion</field>
         <field name="view_mode">tree,form</field>
     </record>
-
-    <menuitem id="menu_metrica_suscripcion" name="Métricas" parent="menu_suscripciones" action="action_metrica_suscripcion"/>
 </odoo>
