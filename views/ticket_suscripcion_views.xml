@@ -22,7 +22,7 @@
                 <sheet>
                     <group>
                         <field name="nombre"/>
-                        <field name="descripcion" widget="textarea"/>
+                        <field name="descripcion"/>
                         <field name="contrato_id"/>
                         <field name="estado"/>
                         <field name="horas_utilizadas"/>
