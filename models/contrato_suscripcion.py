@@ -27,3 +27,23 @@ class ContratoSuscripcion(models.Model):
         if self.plan_id:
             meses = {'mensual': 1, 'trimestral': 3, 'anual': 12}[self.plan_id.ciclo_facturacion]
             self.fecha_fin = self.fecha_inicio + timedelta(days=30 * meses)
+
+    @api.model
+    def generar_facturas_recurrentes(self):
+        """
+        Genera facturas recurrentes para contratos activos.
+        """
+        contratos_activos = self.search([('estado', '=', 'activo')])
+        for contrato in contratos_activos:
+            # Lógica para crear una factura
+            factura_vals = {
+                'partner_id': contrato.cliente_id.id,
+                'invoice_date': fields.Date.today(),
+                'invoice_line_ids': [(0, 0, {
+                    'name': contrato.plan_id.nombre,
+                    'quantity': 1,
+                    'price_unit': contrato.plan_id.precio,
+                })],
+            }
+            factura = self.env['account.move'].create(factura_vals)
+            factura.action_post()  # Valida la factura automáticamente

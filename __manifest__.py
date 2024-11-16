@@ -1,6 +1,7 @@
 {
     'name': 'Gestión Avanzada de Suscripciones',
     'version': '1.0',
+    'license': 'LGPL-3',
     'author': 'Consultoría de Software',
     'category': 'Servicios',
     'depends': ['base', 'sale_management', 'account', 'project'],
