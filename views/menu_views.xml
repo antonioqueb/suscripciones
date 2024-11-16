@@ -3,14 +3,14 @@
     <menuitem id="menu_suscripciones" name="Suscripciones" sequence="10"/>
 
     <!-- Submenú de Planes -->
-    <menuitem id="menu_plan_suscripcion" name="Planes" parent="menu_suscripciones" action="action_plan_suscripcion" sequence="20"/>
+    <menuitem id="menu_plan_suscripcion" name="Planes" parent="menu_suscripciones" action="suscripciones.action_plan_suscripcion" sequence="20"/>
 
     <!-- Submenú de Contratos -->
-    <menuitem id="menu_contrato_suscripcion" name="Contratos" parent="menu_suscripciones" action="action_contrato_suscripcion" sequence="21"/>
+    <menuitem id="menu_contrato_suscripcion" name="Contratos" parent="menu_suscripciones" action="suscripciones.action_contrato_suscripcion" sequence="21"/>
 
     <!-- Submenú de Tickets -->
-    <menuitem id="menu_ticket_suscripcion" name="Tickets" parent="menu_suscripciones" action="action_ticket_suscripcion" sequence="22"/>
+    <menuitem id="menu_ticket_suscripcion" name="Tickets" parent="menu_suscripciones" action="suscripciones.action_ticket_suscripcion" sequence="22"/>
 
     <!-- Submenú de Métricas -->
-    <menuitem id="menu_metrica_suscripcion" name="Métricas" parent="menu_suscripciones" action="action_metrica_suscripcion" sequence="23"/>
+    <menuitem id="menu_metrica_suscripcion" name="Métricas" parent="menu_suscripciones" action="suscripciones.action_metrica_suscripcion" sequence="23"/>
 </odoo>
