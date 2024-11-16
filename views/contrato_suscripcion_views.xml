@@ -22,6 +22,9 @@
         <field name="model">contrato.suscripcion</field>
         <field name="arch" type="xml">
             <form string="Contrato de Suscripción">
+                <header>
+                    <button name="generar_facturas_recurrentes" type="object" string="Generar Factura" class="btn-primary"/>
+                </header>
                 <sheet>
                     <group>
                         <field name="nombre"/>
@@ -31,6 +34,10 @@
                         <field name="fecha_fin"/>
                         <field name="estado"/>
                         <field name="horas_restantes" readonly="1"/>
+                    </group>
+                    <group string="Opciones de Facturación">
+                        <field name="prorratear"/>
+                        <field name="descuento_renovacion"/>
                     </group>
                 </sheet>
             </form>
