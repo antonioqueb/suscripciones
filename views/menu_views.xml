@@ -1,13 +1,16 @@
 <odoo>
-    <!-- Mueve el menú "Planes" al menú de Ventas -->
-    <menuitem id="menu_plan_suscripcion" name="Planes de Suscripción" parent="sale.sale_menu" action="action_plan_suscripcion" sequence="20"/>
+    <!-- Menú Principal para Suscripciones -->
+    <menuitem id="menu_suscripciones" name="Suscripciones" sequence="10"/>
 
-    <!-- Mueve el menú "Contratos" al menú de Ventas -->
-    <menuitem id="menu_contrato_suscripcion" name="Contratos de Suscripción" parent="sale.sale_menu" action="action_contrato_suscripcion" sequence="21"/>
+    <!-- Submenú de Planes -->
+    <menuitem id="menu_plan_suscripcion" name="Planes" parent="menu_suscripciones" action="action_plan_suscripcion" sequence="20"/>
 
-    <!-- Mueve el menú "Tickets" al menú de Ventas -->
-    <menuitem id="menu_ticket_suscripcion" name="Tickets de Suscripción" parent="sale.sale_menu" action="action_ticket_suscripcion" sequence="22"/>
+    <!-- Submenú de Contratos -->
+    <menuitem id="menu_contrato_suscripcion" name="Contratos" parent="menu_suscripciones" action="action_contrato_suscripcion" sequence="21"/>
 
-    <!-- Mueve el menú "Métricas" al menú de Ventas -->
-    <menuitem id="menu_metrica_suscripcion" name="Métricas de Suscripción" parent="sale.sale_menu" action="action_metrica_suscripcion" sequence="23"/>
+    <!-- Submenú de Tickets -->
+    <menuitem id="menu_ticket_suscripcion" name="Tickets" parent="menu_suscripciones" action="action_ticket_suscripcion" sequence="22"/>
+
+    <!-- Submenú de Métricas -->
+    <menuitem id="menu_metrica_suscripcion" name="Métricas" parent="menu_suscripciones" action="action_metrica_suscripcion" sequence="23"/>
 </odoo>
