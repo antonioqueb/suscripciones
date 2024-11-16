@@ -10,6 +10,7 @@
         'views/contrato_suscripcion_views.xml',
         'views/ticket_suscripcion_views.xml',
         'views/metrica_suscripcion_views.xml',
+        'views/soporte_ticket_views.xml',
         'views/menu_views.xml',
         'data/planes_suscripcion_data.xml',
         'data/cron_jobs.xml',
