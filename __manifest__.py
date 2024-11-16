@@ -3,7 +3,7 @@
     'version': '1.0',
     'author': 'Consultoría de Software',
     'category': 'Servicios',
-    'depends': ['base', 'sale_management', 'helpdesk', 'account', 'project'],
+    'depends': ['base', 'sale_management', 'account', 'project'],
     'data': [
         'security/ir.model.access.csv',
         'views/plan_suscripcion_views.xml',
