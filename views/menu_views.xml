@@ -1,0 +1,7 @@
+<odoo>
+    <menuitem id="menu_suscripciones" name="Suscripciones" sequence="10"/>
+    <menuitem id="menu_plan_suscripcion" name="Planes" parent="menu_suscripciones" action="action_plan_suscripcion"/>
+    <menuitem id="menu_contrato_suscripcion" name="Contratos" parent="menu_suscripciones" action="action_contrato_suscripcion"/>
+    <menuitem id="menu_ticket_suscripcion" name="Tickets" parent="menu_suscripciones" action="helpdesk.helpdesk_ticket_action_main"/>
+    <menuitem id="menu_metrica_suscripcion" name="Métricas" parent="menu_suscripciones" action="action_metrica_suscripcion"/>
+</odoo>

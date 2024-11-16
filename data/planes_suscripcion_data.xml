@@ -1,0 +1,26 @@
+<odoo>
+    <record id="plan_basico" model="plan.suscripcion">
+        <field name="nombre">Básico</field>
+        <field name="descripcion">Soporte técnico limitado con actualizaciones cada 6 meses.</field>
+        <field name="ciclo_facturacion">mensual</field>
+        <field name="precio">500.0</field>
+        <field name="horas_incluidas">5</field>
+        <field name="tipo_plan">basico</field>
+    </record>
+    <record id="plan_avanzado" model="plan.suscripcion">
+        <field name="nombre">Avanzado</field>
+        <field name="descripcion">Soporte prioritario y capacitación mensual.</field>
+        <field name="ciclo_facturacion">mensual</field>
+        <field name="precio">1000.0</field>
+        <field name="horas_incluidas">15</field>
+        <field name="tipo_plan">avanzado</field>
+    </record>
+    <record id="plan_premium" model="plan.suscripcion">
+        <field name="nombre">Premium</field>
+        <field name="descripcion">Soporte técnico ilimitado y personalizaciones menores.</field>
+        <field name="ciclo_facturacion">mensual</field>
+        <field name="precio">2000.0</field>
+        <field name="horas_incluidas">30</field>
+        <field name="tipo_plan">premium</field>
+    </record>
+</odoo>
